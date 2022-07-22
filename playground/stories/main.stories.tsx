@@ -1,13 +1,12 @@
-import { Demo } from 'my-custom-vue3-package';
+// import { Demo } from 'my-custom-vue3-package';
+import { JsxDemo as CountDemo } from 'my-custom-vue3-package';
 
 export default {
   title: 'Intro/Playground',
 };
 
-export const Main = () => {
-  return () => (
-    <div style={{ display: 'flex' }}>
-      <Demo count={6} />
-    </div>
-  );
-};
+export const Main = () => () => (
+  <div style={{ display: 'flex' }}>
+    <CountDemo count={6} />
+  </div>
+);
