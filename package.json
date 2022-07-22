@@ -1,6 +1,6 @@
 {
   "name": "my-custom-vue3-package",
-  "version": "1.0.10",
+  "version": "0.0.0",
   "description": "Vue3 components that give you the power of editable sandboxes that run in the browser.",
   "keywords": [
     "vue3"
