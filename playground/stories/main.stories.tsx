@@ -5,8 +5,8 @@ export default {
   title: 'Intro/Playground',
 };
 
-export const Main = () => () => (
-  <div style={{ display: 'flex' }}>
+export const Main = () => (
+  <div>
     <CountDemo count={6} />
   </div>
 );
