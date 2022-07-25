@@ -1,7 +1,7 @@
 {
   "name": "my-custom-vue3-package",
   "version": "0.0.1",
-  "description": "Vue3 components that give you the power of editable sandboxes that run in the browser.",
+  "description": "npm template for vue3s",
   "keywords": [
     "vue3"
   ],
