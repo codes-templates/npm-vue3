@@ -4,7 +4,7 @@
 
 > It is recommended to use jsx to develop components, If you want to develop with .vue
 >
->do change with pacckage.json:
+> do change with pacckage.json:
 
 ```diff
 "scripts": {
