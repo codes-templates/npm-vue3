@@ -1,6 +1,6 @@
 {
   "name": "my-custom-vue3-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "npm template for vue3s",
   "keywords": [
     "vue3"
