@@ -47,16 +47,6 @@
 
 replace ```my-custom-vue3-package``` with your package name
 
-**TIPS**:
-*after npm install, run command*
-
-> storybook install react types, but we do not need it
-
-```bash
-rm -rf node_modules/@types/react
-```
-
-
 ## Directory structure
 
 ```js
