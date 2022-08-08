@@ -37,7 +37,7 @@
     "dev": "concurrently \"npm run build:css-watch\" \"npm run dev -w playground\"",
     "dev:pack": "npm run dev:usepack -w playground",
     "postinstall": "rimraf rf ./node_modules/@types/react",
-    "lint": "eslint src/**/*.{ts,tsx} --ext .ts,.tsx",
+    "lint": "eslint --ext .ts,.tsx,.vue ./src",
     "prepare": "chmod a+x .husky/* && husky install",
     "prepublishOnly": "npm run build",
     "release": "bumpp --commit --tag --push",
