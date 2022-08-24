@@ -47,6 +47,8 @@
 
 replace ```my-custom-vue3-package``` with your package name
 
+replace ```MyPackageName``` with your package name
+
 ## Directory structure
 
 ```js
@@ -63,11 +65,11 @@ Project
 │   ├── vite-env.d.ts
 │   └── vite.config.ts
 ├── postcss.config.js  # build styles with postcss
-├── global.d.ts # global componet type declaration (TIPS: Manual maintenance is required)
 ├── src                # Package source code
 │   ├── index.ts       # Package source entry
 │   ├── stories        # storybook for building UI components and pages
 │   ├── styles         # styles for Package
+│   ├── component.d.ts         # global componet type declaration (TIPS: Manual maintenance is required)
 │   └── types.ts       # ts type declaration for Package
 ├── tsconfig.json      # ts config
 └── tsup.config.ts     # build package with tsup
@@ -77,20 +79,9 @@ Project
 
 ```js
 // main.ts
-import InstallPlugin from 'my-custom-vue3-package';
+import MyPackageName, { type PluginOptions } from 'my-custom-vue3-package';
 
-app.use(InstallPlugin());
-```
-
-```js
-// tsconfig.json
-{
-  "compilerOptions": {
-    "types": [
-      "my-custom-vue3-package/global"
-    ]
-  }
-}
+app.use(MyPackageName, { test: 'test property value' } as PluginOptions);
 ```
 
 ## How to add GITHUB_TOKEN

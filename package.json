@@ -21,9 +21,9 @@
   "typings": "./dist/index.d.ts",
   "files": [
     "dist",
+    "src/component.d.ts",
     "package.json",
-    "README.md",
-    "global.d.ts"
+    "README.md"
   ],
   "workspaces": [
     "playground"
