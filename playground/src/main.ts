@@ -13,6 +13,7 @@ import 'virtual:windi.css';
 import 'uno.css';
 import './styles/main.css';
 import './index.css';
+import 'my-custom-vue3-package/styles/main.scss';
 
 const app = createApp(App);
 const router = createRouter({

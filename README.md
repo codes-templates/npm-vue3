@@ -31,7 +31,7 @@
   > start --> ```npm run dev```
 
 - 🍔 Use [browserslistrc](./.browserslistrc)
-- 🪗 Build styles with [postcss](./postcss.config.js) ([postcss-nested](https://www.npmjs.com/package/postcss-nested)/ [autoprefixer](https://www.npmjs.com/package/autoprefixer) / [cssnano](https://cssnano.co/docs/getting-started/))
+- 🪗 Build styles with sass && [postcss](./postcss.config.js) ([postcss-nested](https://www.npmjs.com/package/postcss-nested)/ [autoprefixer](https://www.npmjs.com/package/autoprefixer) / [cssnano](https://cssnano.co/docs/getting-started/))
 - 🌭 [Stylelint](https://stylelint.io/) that helps you avoid errors and enforce conventions in your styles.
 - 🍟 [Mono repo with npm](https://dev.to/ynwd/how-to-create-react-monorepo-with-npm-workspace-webpack-and-create-react-app-2dhn)
 - 🎉 [TypeScript](https://www.typescriptlang.org/), of course
