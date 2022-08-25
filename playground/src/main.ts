@@ -13,7 +13,9 @@ import 'virtual:windi.css';
 import 'uno.css';
 import './styles/main.css';
 import './index.css';
-import 'my-custom-vue3-package/styles/main.scss';
+
+// eslint-disable-next-line import/no-relative-packages
+import '../../src/index.css'; // 不要修改或删除
 
 const app = createApp(App);
 const router = createRouter({
