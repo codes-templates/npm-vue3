@@ -30,7 +30,7 @@
   ],
   "scripts": {
     "build": "tsup && npm run build:css",
-    "build:css": "concurrently \"npm run build:scss\" \"npm run build:postcss\"",
+    "build:css": "npm run build:scss && npm run build:postcss",
     "build:css-watch": "concurrently \"npm run build:scss-watch\" \"npm run build:postcss-watch\"",
     "build:postcss": "postcss src/index.css -o dist/index.css",
     "build:postcss-watch": "postcss src/index.css -o dist/index.css -w",
