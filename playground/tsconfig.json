@@ -33,12 +33,6 @@
       "../global"
     ],
     "paths": {
-      "~/*": [
-        "src/*"
-      ],
-      "#/*": [
-        "../dist/*"
-      ],
       "my-custom-vue3-package": [
         "../src"
       ],

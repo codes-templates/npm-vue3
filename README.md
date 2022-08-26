@@ -38,7 +38,7 @@
 - 🎄 Unit Testing with [Vitest](https://vitest.dev/)
 - 🏑 [Storybook](https://storybook.js.org/) for building UI components and pages
 - 🧆 [ESLint](https://eslint.org/) statically analyzes your code to quickly find problems.
-- ⚒ [Husky](https://typicode.github.io/husky/#/) & [lint-staged](https://github.com/okonet/lint-staged#readme)
+- ⚒ [Husky](https://typicode.github.io/husky) & [lint-staged](https://github.com/okonet/lint-staged#readme)
 - ☕ [Commitlint](https://commitlint.js.org) that helps your team adhering to a commit convention
 - 🛸 Deploy Storybook on [Netlify](https://www.netlify.com/) ---> [config](./.github/workflows/deploy.yaml)
 - 🥳 [MIT License](https://mit-license.org/)

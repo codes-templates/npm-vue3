@@ -15,7 +15,7 @@ import './styles/main.css';
 import './index.css';
 
 // eslint-disable-next-line import/no-relative-packages
-import '../../src/index.css'; // 不要修改或删除
+import '../../src/styles/main.scss'; // 不要修改或删除
 
 const app = createApp(App);
 const router = createRouter({

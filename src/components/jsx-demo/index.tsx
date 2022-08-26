@@ -19,7 +19,7 @@ export const JsxDemo = defineComponent({
   },
   setup(props: Props) {
     return () => (
-      <div>count in jsx component: {props.count}</div>
+      <div class="test">count in jsx component: {props.count}</div>
     );
   },
 }) as DefineComponent<Props>;
