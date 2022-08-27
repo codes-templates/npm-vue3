@@ -12,7 +12,7 @@ function changeCount() {
 
 <template>
   <div>
-    <div py2 px6>
+    <div class="py-2 px-6">
       <button class="mybtn" @click="changeCount">change count value</button>
     </div>
 

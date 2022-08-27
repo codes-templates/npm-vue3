@@ -8,9 +8,7 @@ import InstallPlugin from 'my-custom-vue3-package';
 
 import App from './App.vue';
 
-import '@unocss/reset/tailwind.css';
 import 'virtual:windi.css';
-import 'uno.css';
 import './styles/main.css';
 import './index.css';
 

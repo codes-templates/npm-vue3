@@ -1,9 +1,5 @@
 <template>
-  <main
-    font-sans
-    text="gray-700 dark:gray-200"
-    relative
-  >
+  <main class="relative">
     <RouterView v-slot="{ Component }">
       <transition name="page-fade">
         <component
