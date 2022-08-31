@@ -24,6 +24,10 @@
 
 - 🪖 [Github Actions](https://docs.github.com/cn/actions) support (Auto CI on pull_request / Auto Release on push tag / Auto Deploy on push & pull_request)
 - 🍕 Build npm package with [tsup](https://tsup.egoist.sh/)
+- Build-in vitepress
+
+  > ```npm run docs```
+
 - 🍭 Built-in Vue3 dev environment
 
   > [playground](./playground/vite.config.ts) folder

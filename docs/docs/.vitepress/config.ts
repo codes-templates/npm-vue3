@@ -10,6 +10,40 @@ export default defineConfig({
   description: 'my-custom-vue3-package docs',
   lastUpdated: true,
 
+  markdown: {
+    config(md) {
+      md
+        .use(require('markdown-it-directive'))
+        .use(
+          require('markdown-it-directive-webcomponents'),
+          {
+            components: [
+              {
+                present: 'both',
+                name: 'playground',
+                tag: 'playground',
+                parseInner: true,
+              },
+              {
+                present: 'both',
+                name: 'sandbox',
+                tag: 'sand-box',
+                allowedAttrs: ['readonly', 'closabletabs', 'template'],
+                parseInner: true,
+              },
+              {
+                present: 'both',
+                name: 'code-group',
+                tag: 'code-group',
+                allowedAttrs: ['tag'],
+                parseInner: true,
+              },
+            ],
+          }
+      );
+    },
+  },
+
   themeConfig: {
     nav: nav(),
 
