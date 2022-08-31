@@ -9,11 +9,11 @@
 
 :::code-group
 ```bash  [Npm]
-npm install --save vue3-toastify
+npm install --save my-custom-vue3-package
 ```
 
 ```bash  [Yarn]
-yarn add vue3-toastify
+yarn add my-custom-vue3-package
 ```
 :::
 
