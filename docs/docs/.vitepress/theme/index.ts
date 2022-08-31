@@ -8,7 +8,6 @@ import CodeGroup from '../../components/CodeGroup.vue';
 // @ts-ignore
 import SandBox from '../../components/SandBox.vue';
 
-import 'virtual:windi.css';
 import './index.scss';
 
 // eslint-disable-next-line import/no-relative-packages

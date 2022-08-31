@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import WindiCSS from 'vite-plugin-windicss';
 import { version } from '../../../package.json';
 import path from 'path';
 
@@ -72,7 +71,6 @@ export default defineConfig({
     },
     plugins: [
       vueJsx(),
-      WindiCSS(),
     ],
   },
 })

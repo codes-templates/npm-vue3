@@ -5,7 +5,6 @@ import InstallPlugin from 'my-custom-vue3-package';
 
 import App from './App.vue';
 
-import 'virtual:windi.css';
 import './styles/main.css';
 import './index.css';
 

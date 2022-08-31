@@ -24,8 +24,27 @@ function changeCount() {
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="scss">
 .mybtn {
-  @apply rounded-md border border-light-50 mr-5 p-2 bg-green-500 text-xs text-white;
+  outline: none;
+  border-width: 1px;
+  border-radius: 0.375rem;
+  border-color: rgba(253, 253, 253, 1);
+  margin-right: 1.25rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(16, 185, 129, 1);
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 </style>
