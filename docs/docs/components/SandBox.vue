@@ -4,6 +4,7 @@
     :template="template"
     :files="files"
     :options="{
+      showConsoleButton: true,
       showLineNumbers: true,
       showTabs: true,
       closableTabs: closabletabs === 'true',
