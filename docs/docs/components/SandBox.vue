@@ -20,7 +20,7 @@ import {
   type SandpackThemeProp,
   type SandpackPredefinedTemplate,
   SandpackPredefinedTheme,
-} from 'codesandbox-sandpack-vue3';
+} from 'sandpack-vue3';
 import { renderToString } from 'vue/server-renderer';
 import { nextTick, onBeforeMount, onMounted, PropType, ref, useSlots, VNode } from 'vue';
 
