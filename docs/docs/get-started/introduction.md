@@ -33,16 +33,10 @@ https://sandpack-vue3.netlify.app/
   <div>{{ hello }}</div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue';
 
-export default {
-   name: "App",
-   setup() {
-    const hello = ref('Hello World!');
-    return { hello };
-   }
-};
+const hello = ref('Hello World!');
 </script>
 ```
 
