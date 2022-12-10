@@ -46,6 +46,7 @@ export default defineConfig({
     }),
   ],
   // https://github.com/vitest-dev/vitest
+  // @ts-ignore
   test: {
     globals: true,
     environment: 'jsdom',
