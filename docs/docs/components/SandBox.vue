@@ -19,10 +19,10 @@ import {
   type SandpackFiles,
   type SandpackThemeProp,
   type SandpackPredefinedTemplate,
-  SandpackPredefinedTheme,
+  type SandpackPredefinedTheme,
 } from 'sandpack-vue3';
 import { renderToString } from 'vue/server-renderer';
-import { nextTick, onBeforeMount, onMounted, PropType, ref, useSlots, VNode } from 'vue';
+import { nextTick, onBeforeMount, onMounted, type PropType, ref, useSlots, type VNode } from 'vue';
 
 const theme = ref<SandpackThemeProp>('light');
 const files = ref<SandpackFiles>({});

@@ -4,8 +4,6 @@ import Playground from '../../../../playground/src/pages/index.vue';
 // @ts-ignore
 import Demo from '../../components/Demo.vue';
 // @ts-ignore
-import CodeGroup from '../../components/CodeGroup.vue';
-// @ts-ignore
 import SandBox from '../../components/SandBox.vue';
 
 import './index.scss';
@@ -18,7 +16,6 @@ export default {
   enhanceApp({ app }) {
     app.component('Playground', Playground);
     app.component('Demo', Demo);
-    app.component('CodeGroup', CodeGroup);
     app.component('SandBox', SandBox);
   }
 }

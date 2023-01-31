@@ -8,11 +8,11 @@
 
 
 :::code-group
-```bash  [Npm]
+```bash [Npm]
 npm install --save my-custom-vue3-package
 ```
 
-```bash  [Yarn]
+```bash [Yarn]
 yarn add my-custom-vue3-package
 ```
 :::
