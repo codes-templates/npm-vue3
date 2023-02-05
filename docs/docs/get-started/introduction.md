@@ -24,7 +24,7 @@ see: demo --> `main.js`
 ## demo
 
 ::: details For sandbox
-https://sandpack-vue3.netlify.app/
+https://vitepress-sandbox.js-bridge.com
 :::
 
 ::: sandbox

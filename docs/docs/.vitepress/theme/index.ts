@@ -3,8 +3,7 @@ import DefaultTheme from 'vitepress/theme';
 import Playground from '../../../../playground/src/pages/index.vue';
 // @ts-ignore
 import Demo from '../../components/Demo.vue';
-// @ts-ignore
-import SandBox from '../../components/SandBox.vue';
+import { Sandbox } from 'vitepress-plugin-sandpack';
 
 import './index.scss';
 
@@ -16,6 +15,7 @@ export default {
   enhanceApp({ app }) {
     app.component('Playground', Playground);
     app.component('Demo', Demo);
-    app.component('SandBox', SandBox);
+    // https://vitepress-sandbox.js-bridge.com/
+    app.component('Sandbox', Sandbox);
   }
 }
