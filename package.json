@@ -42,7 +42,6 @@
     "build:vite": "vite build && npm run build:css",
     "build:storybook": "npm run build:storybook -w playground",
     "preview:docs": "npm run docs:serve -w docs",
-    "postinstall": "rimraf rf ./node_modules/@types/react",
     "lint": "eslint --ext .ts,.tsx,.vue ./src",
     "tsup-w": "tsup --watch",
     "dev-pack": "npm run dev:usepack -w playground",
@@ -54,9 +53,6 @@
     "test:ui": "vitest --ui",
     "typecheck": "tsc && vue-tsc"
   },
-  "dependencies": {
-    "rimraf": "^4.1.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-transform-runtime": "^7.19.6",
@@ -65,12 +61,6 @@
     "@babel/preset-typescript": "^7.18.6",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
-    "@storybook/addon-actions": "~6.5.16",
-    "@storybook/addon-docs": "~6.5.16",
-    "@storybook/addon-essentials": "~6.5.16",
-    "@storybook/addon-links": "~6.5.16",
-    "@storybook/builder-vite": "0.4.0",
-    "@storybook/vue3": "~6.5.16",
     "@swc/core": "^1.3.32",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^14.4.3",
@@ -107,6 +97,7 @@
     "postcss-loader": "^7.0.2",
     "postcss-nested": "^6.0.0",
     "postcss-scss": "^4.0.6",
+    "rimraf": "^4.1.2",
     "sass": "^1.58.0",
     "shelljs": "^0.8.5",
     "stylelint": "^14.16.1",
@@ -132,16 +123,5 @@
   "engines": {
     "node": ">=16",
     "npm": ">=7"
-  },
-  "overrides": {
-    "@storybook/addon-essentials": {
-      "babel-loader": "^9.1.0"
-    },
-    "@storybook/vue3": {
-      "babel-loader": "^9.1.0"
-    },
-    "@storybook/builder-vite": {
-      "@vitejs/plugin-vue": "^4.0.0"
-    }
   }
 }
