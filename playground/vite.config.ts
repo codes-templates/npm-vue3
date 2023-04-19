@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@/': `${path.resolve(__dirname, 'src')}/`,
-      'my-custom-vue3-package': path.resolve(__dirname, process.env.USEPACK === 'true' ? '../dist/esm' : '../src'),
+      'my-custom-vue3-package': path.resolve(__dirname, process.env.USEPACK === 'true' ? '../dist' : '../src'),
     },
   },
   build: {

@@ -6,28 +6,38 @@ import path from 'path';
 import Vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { defineConfig } from 'vite';
+import browserslistToEsbuild from 'browserslist-to-esbuild';
+import pkg from './package.json';
+
+const resolvePath = (pathName: string) => path.resolve(__dirname, pathName);
 
 export default defineConfig({
   resolve: {
     alias: {
-      'my-custom-vue3-package': path.resolve(__dirname, './src/index.ts'),
+      'my-custom-vue3-package': resolvePath('./src/index.ts'),
     },
   },
   build: {
     minify: true,
     lib: {
       fileName: (type) => {
-        if (type === 'es') return 'esm/index.js';
+        if (type === 'es') return 'index.mjs';
         if (type === 'cjs') return 'index.js';
         return 'index.js';
       },
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: resolvePath('src/index.ts'),
       formats: ['es', 'cjs'],
     },
-    // sourcemap: true,
+    target: browserslistToEsbuild(),
+    sourcemap: false,
     rollupOptions: {
+      output: {
+        exports: 'named',
+      },
       external: [
-        'vue',
+        // ...Object.keys(pkg.dependencies), // if exist
+        ...Object.keys(pkg.devDependencies),
+        ...Object.keys(pkg.peerDependencies),
       ],
     },
   },
