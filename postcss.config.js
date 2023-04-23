@@ -6,6 +6,11 @@ module.exports = {
       preset: 'default',
     }),
     require('postcss-nested'),
-    require('autoprefixer'),
+    require('postcss-flexbugs-fixes'), // https://github.com/luisrudge/postcss-flexbugs-fixes#readme
+    require('postcss-preset-env')({
+      autoprefixer: {
+        grid: false,
+      },
+    }),
   ]
 }
