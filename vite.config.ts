@@ -7,6 +7,7 @@ import Vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { defineConfig } from 'vite';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
+import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 import pkg from './package.json';
 
 const resolvePath = (pathName: string) => path.resolve(__dirname, pathName);
@@ -31,6 +32,13 @@ export default defineConfig({
     target: browserslistToEsbuild(),
     sourcemap: false,
     rollupOptions: {
+      plugins: [
+        // https://www.npmjs.com/package/@rollup/plugin-babel
+        getBabelOutputPlugin({
+          configFile: path.resolve(__dirname, '.babelrc'),
+          filename: '.babelrc',
+        }),
+      ],
       output: {
         exports: 'named',
       },
