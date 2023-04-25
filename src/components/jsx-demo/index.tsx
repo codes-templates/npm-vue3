@@ -29,7 +29,7 @@ export const JsxDemo = defineComponent({
         <p>count in jsx component: {props.count}</p>
         <p>{b}</p>
         <p>{c}</p>
-        <p>{d}</p>
+        <p>{d?.name}</p>
       </div>
     );
   },
