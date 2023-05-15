@@ -22,6 +22,7 @@ export default defineConfig({
   ],
   shims: false,
   clean: true,
+  treeshake: true,
   dts: './src/index.ts',
   // sourcemap: true,
   splitting: false,
