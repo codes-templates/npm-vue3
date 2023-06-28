@@ -1,6 +1,6 @@
 {
-  "name": "my-custom-vue3-package",
-  "version": "0.0.2",
+  "name": "blm-log",
+  "version": "0.0.3",
   "description": "npm template for vue3s",
   "keywords": [
     "vue3"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/codes-templates/npm-vue3.git"
   },
   "license": "MIT",
-  "author": "jerrywu001 <57242263@163.com>",
+  "author": "wangfang02@bailongma",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -74,7 +74,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.22.3",
-    "core-js": "^3.30.2"
+    "core-js": "^3.30.2",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.22.4",
