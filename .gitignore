@@ -15,6 +15,7 @@ pnpm-lock.yaml
 yarn.lock
 
 src/index.css
+storybook-static
 playground/dist
 playground/storybook-static
 

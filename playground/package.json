@@ -3,32 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc && vue-tsc && vite build",
-    "build:storybook": "build-storybook",
     "dev": "vite --host --open",
     "dev:usepack": "cross-env USEPACK=true vite --host --port 5000 --open",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
     "typecheck": "tsc && vue-tsc"
   },
   "dependencies": {
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "~6.5.16",
-    "@storybook/addon-docs": "~6.5.16",
-    "@storybook/addon-essentials": "~6.5.16",
-    "@storybook/addon-links": "~6.5.16",
-    "@storybook/builder-vite": "0.4.2",
-    "@storybook/vue3": "~6.5.16",
     "cross-env": "^7.0.3",
     "vue-loader": "^17.2.2"
-  },
-  "overrides": {
-    "@storybook/addon-essentials": {
-      "babel-loader": "^9.1.0"
-    },
-    "@storybook/vue3": {
-      "babel-loader": "^9.1.0"
-    }
   }
 }

@@ -1,5 +1,6 @@
+import type { Preview } from '@storybook/vue3';
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
-import '../../src/styles/main.scss';
+import '../src/styles/main.scss';
 
 const customViewports = {
   pixel2: {
@@ -25,25 +26,23 @@ const customViewports = {
   },
 };
 
-// https://storybook.js.org/docs/react/essentials/viewport
-export const parameters = {
-  padded: false,
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview: Preview = {
+  parameters: {
+    padded: false,
+    actions: { argTypesRegex: '^on[A-Z].*' },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
     },
-  },
-  options: {
-    storySort: {
-      order: ["Intro"],
-    },
-  },
-  viewport: {
-    viewports: {
-      ...MINIMAL_VIEWPORTS,
-      ...customViewports,
+    viewport: {
+      viewports: {
+        ...MINIMAL_VIEWPORTS,
+        ...customViewports,
+      },
     },
   },
 };
+
+export default preview;

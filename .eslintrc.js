@@ -6,6 +6,7 @@ module.exports = {
     '@vue/typescript/recommended',
     'eslint:recommended', // https://eslint.org/docs/rules/
     'plugin:jsx-a11y/strict', // https://www.npmjs.com/package/eslint-plugin-jsx-a11y
+    'plugin:storybook/recommended',
   ],
   env: {
     browser: true,
