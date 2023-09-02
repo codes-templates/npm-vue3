@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import { describe, expect, test } from 'vitest';
 
 describe('dom test', () => {
   test.concurrent('testing-library/jest-dom', async () => {

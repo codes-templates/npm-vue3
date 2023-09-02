@@ -1,4 +1,4 @@
-import { vi } from 'vitest';
+import { vi, describe, test, expect } from 'vitest';
 
 function timer(callback) {
   setTimeout(() => {
