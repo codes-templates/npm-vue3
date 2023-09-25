@@ -9,7 +9,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-rc.10",
+    "vitepress": "1.0.0-rc.20",
     "vitepress-plugin-sandpack": "latest"
   }
 }
