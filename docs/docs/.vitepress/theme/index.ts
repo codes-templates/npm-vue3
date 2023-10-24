@@ -6,6 +6,7 @@ import Demo from '../../components/Demo.vue';
 import { Sandbox } from 'vitepress-plugin-sandpack';
 
 import './index.scss';
+import 'vitepress-plugin-sandpack/dist/style.css';
 
 // eslint-disable-next-line import/no-relative-packages
 import '../../../../src/styles/main.scss'; // 不要修改或删除
