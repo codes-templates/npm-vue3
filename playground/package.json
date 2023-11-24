@@ -1,6 +1,7 @@
 {
   "name": "playground",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "build": "tsc && vue-tsc && vite build",
     "dev": "vite --host --open",
@@ -13,6 +14,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "vue-loader": "^17.3.0"
+    "vue-loader": "^17.3.1"
   }
 }
