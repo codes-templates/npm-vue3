@@ -62,6 +62,7 @@
     "build:postcss": "postcss src/index.css -o dist/index.css",
     "build:vite": "vite build && npm run build:css",
     "preview:docs": "npm run docs:serve -w docs",
+    "postinstall": "rimraf -rf node_modules/@types/react",
     "lint": "eslint --ext .ts,.tsx,.vue ./src",
     "tsup-w": "tsup --watch",
     "dev-pack": "npm run dev:usepack -w playground",
