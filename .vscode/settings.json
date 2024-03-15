@@ -5,11 +5,10 @@
   "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.tslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
   "eslint.options": {
-    "overrideConfigFile": "./.eslintrc.js"
+    "overrideConfigFile": "./.eslintrc.cjs"
   },
   "eslint.validate": [
     "javascript",
